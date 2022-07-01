@@ -99,7 +99,7 @@ You will be asked a series of questions regarding your leave.
 You are under no obligation to continually moderate when life becomes busy and you require a break.
 
 .. warning::
-    :ref:`Taking a leave of absense during your Trial results in an immediate termination.`
+    :ref:`Taking a leave of absense during your Trial results in an immediate termination. If it is an emergency that you absolutely must take care of, please contact your mentor.`
 
 - **Inactivity**
 
@@ -131,11 +131,11 @@ Conclusion
 
 - **Word from Eternalll**
 
-I created this Discord on December 11, 2017 when I failed to find a Der Riese game on Black Ops 1 PC. 
-I searched and was unable to find any community that congregated fans of the Zombies mode. 
-Knowing this, I began seeking out the goal to create a drama, cheating, and advertisement free Zombies LFG community. 
-As you begin your Trial and (hopefully) eventually move forward to become a a Moderator, 
-you are contributing to the continued enjoyment of the Zombies mode and fostering a great environment for all to play and have fun. Thank you!
+This Discord was created all the way back in December 2017 when I could not find a Der Riese game on Black Ops 1 PC. 
+Disatisfied with the lack of a central community to find competent players, fans of zombies, and more, 
+I set out to create a community that would perform this exact objective. Furthermore, I wanted to foster an advertisement, cheat, and drama free environment. 
+This environment is constantly growing and changing, you are volunteering to help keep it consistent and a great choice of server for those looking for groups for zombies. 
+Thank you for contributing your time to allow others to peacefully game on and grow their love for Zombies more, creating new memories.
 
 - **More Resources**
 

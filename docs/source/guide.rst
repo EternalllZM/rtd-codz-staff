@@ -65,7 +65,7 @@ Verbal warning, unrelated to the modlog system. You may optionally use a mention
 
 .. code-block:: none
 
-    !warn <user> (reason)``::``
+    !warn <user> (reason)
 
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
@@ -162,11 +162,11 @@ The left and right reactions scroll through the modlog. Pressing ❌ will close 
 
 - **✏️ and 🗑️**
 
-.. warning::
-    :ref:`Do not use these on the modlog overview. Use the reactions to scroll to a specific reaction.`
-
 After scrolling to an individual punishment, ✏️ will allow you to edit the reason. Useful if you made a typo or were not specific enough in your punishment reason. 
 🗑️ allows you to clear the modlog entry.
+
+.. warning::
+    :ref:`Do not use these on the modlog overview. Use the reactions to scroll to a specific reaction.`
 
 .. important::
     :ref:`Edits made to the modlog do not update for the punished user.`
