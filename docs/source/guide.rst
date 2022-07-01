@@ -39,21 +39,20 @@ When navigating this section, be aware that items in <brackets> are required and
 
 - **Verbal Rule Warnings**
 
-    !rule<#> (mention)
-    ``::``
+    !rule<#> (mention)::
 
 Verbal warning, unrelated to the modlog system. You may optionally use a mention (not ID) in order to direct the warning to the user.
 
 - **Warning**
 
-    !warn <user> (reason)
-    ``::``
+    !warn <user> (reason)``::``
 
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
 - **Muting**
 
-> !mute <user> <time> (reason)
+* item text::
+        !mute <user> <time> (reason)
 
 Times are in a shortened format, minute **m**, hour **h**, day **d**, week **w**.
 
