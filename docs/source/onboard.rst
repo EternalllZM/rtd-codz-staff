@@ -15,7 +15,7 @@ There is a lot of information to become familar with; you do not need to know ab
 
 - **Trial Moderator Position**
 
-As a @Trial Mod, you are a regular Moderator with regards to permissions, but under Trial. 
+As a Trial Mod, you are a regular Moderator with regards to permissions, but under Trial. 
 At this point you are to learn from our Staff, performing a few moderations within your two week period.
 
 You should:

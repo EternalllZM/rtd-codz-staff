@@ -1,5 +1,5 @@
 =====
-Staff Onboard
+Staff Guide
 =====
 
 Effective Moderation
@@ -39,3 +39,27 @@ When navigating this section, be aware that items in <brackets> are required and
 
 - **Verbal Rule Warnings**
 
+    !rule<#> (mention)
+    ``::``
+
+Verbal warning, unrelated to the modlog system. You may optionally use a mention (not ID) in order to direct the warning to the user.
+
+- **Warning**
+
+    !warn <user> (reason)
+    ``::``
+
+Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
+
+- **Muting**
+
+> !mute <user> <time> (reason)
+
+Times are in a shortened format, minute **m**, hour **h**, day **d**, week **w**.
+
+Mutes a user, preventing them from talking (and viewing certain channels). You must disconnect the user if they are in voice.
+
+Users who evade mutes by leaving become permanently muted when rejoining. They must reach out to Modmail to get this fixed as it is their fault.
+
+.. warning::
+    :ref:`Please ensure you specify a time and do not perma-mute users.`
