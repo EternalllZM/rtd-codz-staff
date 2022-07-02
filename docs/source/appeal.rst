@@ -50,5 +50,5 @@ If they leave within this time period, they will still be banned as that is what
 .. note::
     :ref:`Bans that were valid mean the user does not get another appeal.`
 
-.. warning::
+.. tip::
     :ref:`If you are having trouble throughout any part of this process, ask for help.`

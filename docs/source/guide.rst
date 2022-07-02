@@ -59,11 +59,6 @@ When navigating this section, be aware that items in **<brackets>** are required
 
     !rule<#> (mention)
 
-.. code-block:: none
-    !rule8
-    !rule1 @Eternalll#6100
-    !rule4 @Ashryman#9392 @On My Mind#0001
-
 Verbal warning, unrelated to the modlog system. You may optionally use a mention (not ID) in order to direct the warning to the user.
 
 - **Warning**
@@ -72,11 +67,6 @@ Verbal warning, unrelated to the modlog system. You may optionally use a mention
 
     !warn <user> (reason)
 
-.. code-block:: none
-    !warn 349909910995206145 Being off topic
-    !warn 349909910995206145 [rule2]
-    !warn 349909910995206145 LFGing in #zombies discussion
-
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
 - **Mute**
@@ -84,11 +74,6 @@ Warn the user, logging to the modlog and DMing the user. Warns cannot be appeale
 .. code-block:: none
 
         !mute <user> <time> (reason)
-
-.. code-block:: none
-    !mute 349909910995206145 3d Spamming
-    !mute 349909910995206145 1w [rule2]
-    !mute 349909910995206145 30m Calm down please
 
 Times are in a shortened format, minute **m**, hour **h**, day **d**, week **w**.
 
@@ -105,11 +90,6 @@ Users who evade mutes by leaving become permanently muted when rejoining. They m
 
     !kick <user> (reason)
 
-.. code-block:: none
-    !kick 349909910995206145 Come back when you want to read the rules
-    !kick 349909910995206145 [rule4]
-    !kick 349909910995206145 Please change your profile picture
-
 Kicks remove the member from the server without deleting messages.
 
 - **Softban**
@@ -118,11 +98,6 @@ Kicks remove the member from the server without deleting messages.
 
     !softban <user> (reason)
 
-.. code-block:: none
-    !softban 349909910995206145 Spamming multiple channels
-    !softban 349909910995206145 [rule4]
-    !softban 349909910995206145 Repeatedly being off-topic
-
 Kicks remove the member from the server without deleting messages.
 
 - **Ban**
@@ -130,11 +105,6 @@ Kicks remove the member from the server without deleting messages.
 .. code-block:: none
     
     !ban <user> (reason)
-
-.. code-block:: none
-    !ban 349909910995206145 Distributing cheats
-    !ban 349909910995206145 [rule8]
-    !ban 349909910995206145 Multiple infractions within the server
 
 Bans and DMs the user a link where they may appeal (first offense only) and purges 1 day of messages.
 
@@ -156,9 +126,45 @@ Bans and DMs the user a link where they may appeal (first offense only) and purg
 | Ban       | !ban <id> [rule5]                      |
 +-----------+----------------------------------------+
 
+    • Verbal Warning
+.. code-block:: none
+    !rule8
+    !rule1 @Eternalll#6100
+    !rule4 @Ashryman#9392 @On My Mind#0001
+
+    • Warning
+.. code-block:: none
+    !warn 349909910995206145 Being off topic
+    !warn 349909910995206145 [rule2]
+    !warn 349909910995206145 LFGing in #zombies discussion
+
+    • Muting
+.. code-block:: none
+    !mute 349909910995206145 3d Spamming
+    !mute 349909910995206145 1w [rule2]
+    !mute 349909910995206145 30m Calm down please
+
+    • Kicking
+.. code-block:: none
+    !kick 349909910995206145 Come back when you want to read the rules
+    !kick 349909910995206145 [rule4]
+    !kick 349909910995206145 Please change your profile picture
+
+    • Softbanning
+.. code-block:: none
+    !softban 349909910995206145 Spamming multiple channels
+    !softban 349909910995206145 [rule4]
+    !softban 349909910995206145 Repeatedly being off-topic
+
+    • Banning
+.. code-block:: none
+    !ban 349909910995206145 Distributing cheats
+    !ban 349909910995206145 [rule8]
+    !ban 349909910995206145 Multiple infractions within the server
+
 - **Substitutions**
 
-Why did we use \"**[rule5]**\" in our ban reason in the example above? Substitutions are a way of increasing your efficiency in issuing punishments. 
+Why did we use \"**[rule#]**\" in some of our reasons in the examples above? Substitutions are a way of increasing your efficiency in issuing punishments. 
 When using brackets around a \"**rule#**\", it will replace the text with the rule that it corresponds to.
 
 .. code-block:: none
