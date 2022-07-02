@@ -144,7 +144,7 @@ translates to the following in the modlog:
 This is a time-saver you should get used to as long as the reason for punishment is indeed that rule and made obvious to the user.
 
 
-Managing the Modlog
+Modlog Management
 ------------
 
 - **Invoking the Modlog**
