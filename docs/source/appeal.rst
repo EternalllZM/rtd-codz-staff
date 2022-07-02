@@ -17,9 +17,9 @@ Moderator Process
 
 2. Identify in the main server who performed the punishment.
 
-3. If you are a Senior Moderator or above, you may decide then (with enough information) whether the appeal should be accepted or not.
+3. If you are a Senior Moderator or above, you may decide (with enough information) whether the appeal should be accepted or not.
 
-4. If you choose not to decide, you may put the decision upon the person who made the punishment.
+4. Ideally, put the decision upon the person who made the punishment.
 
 5. Accept or deny the appeal.
 
@@ -54,9 +54,9 @@ Command Overview
     :ref:`If you are having trouble throughout any part of this process, ask for help.`
 
 +-----------+------------------------------------------------+
-| Command   | Description                                    |
+| Command            | Description                           |
 +===========+================================================+
-| !acceptappeal <id>| Accept a user's appeal                 |
+| !acceptappeal <id> | Accept a user's appeal                |
 +-----------+------------------------------------------------+
-| !currentusers     | View current members in the server.    |
+| !currentusers      | View current members in the server.   |
 +-----------+------------------------------------------------+
