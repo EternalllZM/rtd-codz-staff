@@ -126,37 +126,43 @@ Bans and DMs the user a link where they may appeal (first offense only) and purg
 | Ban       | !ban <id> [rule5]                      |
 +-----------+----------------------------------------+
 
-    • Verbal Warning
+**Verbal Warning**
+
 .. code-block:: none
     !rule8
     !rule1 @Eternalll#6100
     !rule4 @Ashryman#9392 @On My Mind#0001
 
-    • Warning
+**Warning**
+
 .. code-block:: none
     !warn 349909910995206145 Being off topic
     !warn 349909910995206145 [rule2]
     !warn 349909910995206145 LFGing in #zombies discussion
 
-    • Muting
+**Muting**
+
 .. code-block:: none
     !mute 349909910995206145 3d Spamming
     !mute 349909910995206145 1w [rule2]
     !mute 349909910995206145 30m Calm down please
 
-    • Kicking
+**Kicking**
+
 .. code-block:: none
     !kick 349909910995206145 Come back when you want to read the rules
     !kick 349909910995206145 [rule4]
     !kick 349909910995206145 Please change your profile picture
 
-    • Softbanning
+**Softbanning**
+
 .. code-block:: none
     !softban 349909910995206145 Spamming multiple channels
     !softban 349909910995206145 [rule4]
     !softban 349909910995206145 Repeatedly being off-topic
 
-    • Banning
+**Banning**
+
 .. code-block:: none
     !ban 349909910995206145 Distributing cheats
     !ban 349909910995206145 [rule8]
