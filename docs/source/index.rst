@@ -1,4 +1,4 @@
-Call of Duty Zombies Discord Documentation
+Call of Duty Zombies Discord Staff Documentation
 ===================================
 
 This page serves as an index for documentation related to our Discord.
@@ -11,11 +11,9 @@ Staff Resources
    onboard
    guide
 
-Server Content
+Appeal Server
 --------
 
 .. toctree::
 
-   meme_database
-   server_history
-   privacy_policy
+   appeal
