@@ -17,3 +17,10 @@ Appeal Server
 .. toctree::
 
    appeal
+
+Command Docs
+--------
+
+.. toctree::
+
+   modmail
