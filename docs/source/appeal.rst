@@ -5,17 +5,16 @@ Appeal Guide
 User Process
 ------------
 
-When the user is banned, they are sent a message with a link to the appeal server. 
-Once they join the appeal server, they are put into an empty channel where they are to read `click and read their own appeal guide`. 
+1. When the user is banned, they are sent a message with a link to an appeal website. 
 
-.. _`click and read their own appeal guide`: https://rtd-codz.readthedocs.io/en/latest/appeal_guide.html#
+2. They will visit the website, authenticate with Discord, and fill out the questions.
 
 Moderator Process
 ------------
 
-1. View the **#appeals** channel and review all the information within the appeal.
+1. View the **#ban-appeals** channel and review all the information within the appeal.
 
-2. Identify in the main server who performed the punishment.
+2. Identify who performed the punishment.
 
 3. Senior Moderator or above may decide (with enough information) on the appeal themselves.
 
@@ -23,32 +22,19 @@ Moderator Process
 
 5. Accept or deny the appeal.
 
-- **Intervention**
 
-You may choose to create an intervention within the server for the person who was banned. 
-Click the button in the **#intervention** channel to create it and then add the person you want in the appeal.
+Accepting or Denying Appeals
+------------
 
-- **Viewing Users**
+1. If you are accepting the appeal, select the \"Approve and Unban\" button, reacting with ✅ under the embed.
 
-Since Staff are hidden from the appealers, there is a dedicated command to view users within the server. **!currentusers** will target all non-Staff users within the server.
-
-- **Accepting Appeals**
-
-To accept an appeal, run **!acceptappeal <id>** to send the verdict and notify Senior Staff to unban the user.
-
-.. important::
-    :ref:`Bans that were made in error result in the user being kicked from the server instead of banned post-acceptance.`
+2. If you are denying the appeal, select the \"Deny and Block\" button, reacting with ❌ under the embed.
 
 .. warning::
-    :ref:`Do not run the accept appeal command on those who were banned in error. Since errors are made infrequently, you will open an intervention and guide them back onto the server.`
-
-- **Post-Appeal**
-
-After accepting, a timer is set on the user for 12 hours for them to rejoin before a ban is placed. 
-If they leave within this time period, they will still be banned as that is what happens when the appeal is accepted.
+    :ref:`Please ensure you add reactions as to not overlap with another Staff member.`
 
 .. note::
-    :ref:`Bans that were valid mean the user does not get another appeal.`
+    :ref:`Those unbanned are emailed that their appeal was accepted with an invite link.`
 
-.. tip::
-    :ref:`If you are having trouble throughout any part of this process, ask for help.`
+.. important::
+    :ref:`All previous appeal server bans were migrated to the new system.`
