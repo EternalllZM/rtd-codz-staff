@@ -35,6 +35,8 @@ Issuing Punishments
 +===========+========================================+
 | !rule     | Verbal warning not sent to modlog.     |
 +-----------+----------------------------------------+
+| !note     | Add note to user as warning (No DM).   |
++-----------+----------------------------------------+
 | !warn     | A warning sent to the user.            |
 +-----------+----------------------------------------+
 | !mute     | A temporary mute of the user.          |
@@ -57,9 +59,18 @@ When navigating this section, be aware that items in **<brackets>** are required
 
 .. code-block:: none
 
-    !rule<#> (mention)
+    !rule<#> (id)
 
 Verbal warning, unrelated to the modlog system. You may optionally use a mention (not ID) in order to direct the warning to the user.
+
+- **Notes**
+
+.. code-block:: none
+
+    !note <id> (note)
+
+Adds a note as a warning to the user, logging to the modlog. Does not DM the user, Staff only reference.
+
 
 - **Warning**
 

@@ -46,10 +46,7 @@ All Staff are above you at this point. Please ask questions if you are intereste
 
 - **Appeals**
 
-You may not unban a user unless you are Senior Moderator or above. 
-Join the `appeal server here`_ and watch the process after you become a Trial.
-
-.. _`appeal server here`: http://zdappeal.etlightrail.com/
+You may not unban a user unless you are Senior Moderator or above. Appeals are handled internally by Senior Moderators and above automatically.
 
 - **Responsibility**
 
