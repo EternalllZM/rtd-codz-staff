@@ -5,8 +5,8 @@ Staff Guide
 Effective Moderation
 ------------
 
-.. warning::
-    :ref:`All information here is considered semi-confidential. There is no reason for a non-Staff member to read this information.`
+.. important::
+    :ref:`This page has been recently updated to reflect slash command usage. Please ensure you view which commands are slash-supposed and which ones are not (/ vs !).`
 
 - **Developer IDs**
 
@@ -37,15 +37,15 @@ Issuing Punishments
 +-----------+----------------------------------------+
 | !note     | Add note to user as warning (No DM).   |
 +-----------+----------------------------------------+
-| !warn     | A warning sent to the user.            |
+| /warn     | A warning sent to the user.            |
 +-----------+----------------------------------------+
-| !mute     | A temporary mute of the user.          |
+| /mute     | A temporary mute of the user.          |
 +-----------+----------------------------------------+
-| !kick     | Kick the user from the server.         |
+| /kick     | Kick the user from the server.         |
 +-----------+----------------------------------------+
-| !softban  | Same as kick but purges messages.      |
+| /softban  | Same as kick but purges messages.      |
 +-----------+----------------------------------------+
-| !ban      | Permanently ban the user.              |
+| /ban      | Permanently ban the user.              |
 +-----------+----------------------------------------+
 
 - **Optional vs Required**
@@ -55,13 +55,16 @@ When navigating this section, be aware that items in **<brackets>** are required
 .. note::
     :ref:`You do not actually use brackets and parenthesis at all when issuing moderations, they are for reference.`
 
+.. tip::
+    :ref:`Slash commands are more intelligent than regular text-based commands and will ensure requirements are met.`
+
 - **Verbal Warning**
 
 .. code-block:: none
 
     !rule<#> (id)
 
-Verbal warning, unrelated to the modlog system. You may optionally use a mention (not ID) in order to direct the warning to the user.
+Verbal warning, unrelated to the modlog system. You may optionally use an ID or mention in order to direct the warning to the user.
 
 - **Notes**
 
@@ -76,7 +79,7 @@ Adds a note as a warning to the user, logging to the modlog. Does not DM the use
 
 .. code-block:: none
 
-    !warn <user> (reason)
+    /warn <user> <reason>
 
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
@@ -84,9 +87,7 @@ Warn the user, logging to the modlog and DMing the user. Warns cannot be appeale
 
 .. code-block:: none
 
-        !mute <user> <time> (reason)
-
-Times are in a shortened format, minute **m**, hour **h**, day **d**, week **w**.
+    /mute <user> <time> <reason>
 
 Mutes a user, preventing them from talking (and viewing certain channels). You must disconnect the user if they are in voice.
 
@@ -99,7 +100,7 @@ Users who evade mutes by leaving become permanently muted when rejoining. They m
 
 .. code-block:: none
 
-    !kick <user> (reason)
+    !kick <user> <reason>
 
 Kicks remove the member from the server without deleting messages.
 
@@ -107,15 +108,15 @@ Kicks remove the member from the server without deleting messages.
 
 .. code-block:: none
 
-    !softban <user> (reason)
+    !softban <user> <reason>
 
-Kicks remove the member from the server without deleting messages.
+Softban removes a member from the server, deleting 1 day of messages.
 
 - **Ban**
 
 .. code-block:: none
     
-    !ban <user> (reason)
+    !ban <user> <reason>
 
 Bans and DMs the user a link where they may appeal (first offense only) and purges 1 day of messages.
 
@@ -124,17 +125,17 @@ Bans and DMs the user a link where they may appeal (first offense only) and purg
 +-----------+----------------------------------------+
 | Punishment| Issued Command                         |
 +===========+========================================+
-| Verbal    | !rule4 @mention                        |
+| Verbal    | !rule4 <id>                            |
 +-----------+----------------------------------------+
-| Warn      | !warn <id> Spamming the server         |
+| Warn      | /warn <user> Spamming the server       |
 +-----------+----------------------------------------+
-| Mute      | !mute <id> Continually being off topic |
+| Mute      | /mute <user> <time> Spamming           |
 +-----------+----------------------------------------+
-| Kick      | !kick <id> Read the rules please.      |
+| Kick      | /kick <user> Read the rules please     |
 +-----------+----------------------------------------+
-| Softban   | !softban <id> Multi channel spam       |
+| Softban   | /softban <user> Multi channel spam     |
 +-----------+----------------------------------------+
-| Ban       | !ban <id> [rule5]                      |
+| Ban       | /ban <user> [rule5]                    |
 +-----------+----------------------------------------+
 
 - **Substitutions**
@@ -144,13 +145,13 @@ When using brackets around a \"**rule#**\", it will replace the text with the ru
 
 .. code-block:: none
 
-    !warn <id> [rule5]
+    /warn <user> [rule5]
 
 translates to the following full command:
 
 .. code-block:: none
 
-    !warn <id> Rule 5 Violation | Discussing or Committing Piracy
+    /warn <user> Rule 5 Violation | Discussing or Committing Piracy
 
 This is a time-saver you should get used to as long as the reason for punishment is indeed that rule and made obvious to the user.
 
@@ -206,4 +207,3 @@ The executions channel is where the bot had high confidence in its logic and too
 
 .. note::
     :ref:`Warden is not a replacement for human moderation. The bot is not omniscient and cannot possibly cover all chats and their situations like a human can.`
-
