@@ -6,7 +6,7 @@ Effective Moderation
 ------------
 
 .. important::
-    :ref:`This page has been recently updated to reflect slash command usage. Please ensure you view which commands are slash-supposed and which ones are not (/ vs !).`
+    :ref:`This page has been recently updated to reflect slash command usage. Please ensure you view which commands are slash-supported and which ones are not (/ vs !).`
 
 - **Developer IDs**
 
@@ -18,11 +18,9 @@ Please enable this feature immediately.
 .. _`Developer IDs`: https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID
 
 
-
 - **Moderation Bot**
 
-Edward Richtofen#5103 is the main moderation bot for all things. 
-The prefix is **!** for all their commands. With great power comes great responsibility.
+Edward Richtofen#5103 is the main moderation bot for all things. Main moderation commands use **/** while all of the rest use the **!** prefix.
 
 Issuing Punishments
 ------------
