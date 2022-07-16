@@ -56,13 +56,13 @@ Verbal Warning
 
 Verbal warning, unrelated to the modlog system. You may optionally use an ID or mention in order to direct the warning to the user.
 
+    .. image::  /media/punishments/rule.png
+
 .. important::
     :ref:`At this time, slash commands for the rule command are not supported. Please continue to use the ! prefix until this is implemented.`
 
 .. important::
     :ref:`Do not actually use the <brackets> and (parenthesis), they denote required and optional input.`
-
-    .. image::  /media/punishments/rule.png
 
 Warning
 ------------
@@ -73,10 +73,10 @@ Warning
 
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
+    .. image::  /media/punishments/warn.png
+
 .. important::
     :ref:`Remember, the user is DMed. Please provide an appropriate and at least a semi-descriptive reason so that the member can remediate their behavior.`
-
-    .. image::  /media/punishments/warn.png
 
 Mute
 ------------
@@ -87,14 +87,14 @@ Mute
 
 Mutes a user, preventing them from talking (and viewing certain channels). You must disconnect the user if they are in voice.
 
+    .. image::  /media/punishments/mute.png
+
 Users who evade mutes by leaving become permanently muted when rejoining. They must reach out to Modmail to get this fixed as it is their fault.
 
 When selecting a time, there are several pre-defined options that you may choose. It is at moderator discretion to choose a time appropriate for the punishment. 
 
 .. tip::
     :ref:`A time period of a day is usually suggested as a generic minimum period as punished users will be less likely to retaliate after 24 hours have passed.`
-
-    .. image::  /media/punishments/mute.png
 
 Kick
 ------------
@@ -105,14 +105,14 @@ Kick
 
 Kicks remove the member from the server without deleting messages.
 
+    .. image::  /media/punishments/kick.png
+
 Reserve this punishment for new-ish members who need a reality check to come back when they are ready to read the rules and play nice.
 
 Most unused, but can make a statement if necessary.
 
 .. warning::
     :ref:`Will remove all activity ranks (not reset rank itself). Therefore, the member returning must level up once to regain all their roles back.`
-
-    .. image::  /media/punishments/kick.png
 
 Softban
 ------------
@@ -123,11 +123,14 @@ Softban
 
 Softban removes a member from the server, deleting 1 day of messages.
 
+    .. image::  /media/punishments/softban.png
+
 Reserve this punishment for those who you wish to kick, at the same time wanting to delete their messages alongside it.
 
 Calls the user purge portion of the API by immediately banning and unbanning the user.
 
-    .. image::  /media/punishments/softban.png
+.. warning::
+    :ref:`Will remove all activity ranks (not reset rank itself). Therefore, the member returning must level up once to regain all their roles back.`
 
 Ban
 ------------
@@ -140,10 +143,13 @@ Bans and DMs the user a link where they may appeal (first offense only) and purg
 
     .. image::  /media/punishments/ban.png
 
+.. important::
+    :ref:`Members may appeal their punishment via ban appeal website, but only ones made in error are ever accepted.`
+
 Substitutions
 ------------
 
-Why did we use \"**[rule#]**\" in some of our reasons in the examples above? Substitutions are a way of increasing your efficiency in issuing punishments. 
+Substitutions are a way of increasing your efficiency in issuing punishments by pre-filling text with the rule documentation and text itself. 
 When using brackets around a \"**rule#**\", it will replace the text with the rule that it corresponds to.
 
 .. code-block:: none
@@ -156,7 +162,7 @@ translates to the following full command:
 
     /warn <user> Rule 5 Violation | Discussing or Committing Piracy
 
-This is a time-saver you should get used to as long as the reason for punishment is indeed that rule and made obvious to the user.
+This is a time-saver as long as the reason for punishment is indeed that rule and made obvious to the user by a bit of extra text added to the end.
 
 Modlog Management
 ------------
