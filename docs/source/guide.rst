@@ -28,12 +28,13 @@ Issuing Punishments
 .. warning::
     :ref:`Be aware that all bot-issued punishments are direct-messaged to the user. Refrain from using vague or immature reasons.`
 
+.. tip::
+    :ref:`Slash commands are more intelligent than regular text-based commands and will ensure requirements are met.`
+
 +-----------+----------------------------------------+
 | Command   | Description                            |
 +===========+========================================+
 | !rule     | Verbal warning not sent to modlog.     |
-+-----------+----------------------------------------+
-| !note     | Add note to user as warning (No DM).   |
 +-----------+----------------------------------------+
 | /warn     | A warning sent to the user.            |
 +-----------+----------------------------------------+
@@ -46,17 +47,8 @@ Issuing Punishments
 | /ban      | Permanently ban the user.              |
 +-----------+----------------------------------------+
 
-- **Optional vs Required**
-
-When navigating this section, be aware that items in **<brackets>** are required and that items in **(parenthesis)** are optional.
-
-.. note::
-    :ref:`You do not actually use brackets and parenthesis at all when issuing moderations, they are for reference.`
-
-.. tip::
-    :ref:`Slash commands are more intelligent than regular text-based commands and will ensure requirements are met.`
-
-- **Verbal Warning**
+Verbal Warning
+------------
 
 .. code-block:: none
 
@@ -64,16 +56,16 @@ When navigating this section, be aware that items in **<brackets>** are required
 
 Verbal warning, unrelated to the modlog system. You may optionally use an ID or mention in order to direct the warning to the user.
 
-- **Notes**
+.. important::
+    :ref:`At this time, slash commands for the rule command are not supported. Please continue to use the ! prefix until this is implemented.`
 
-.. code-block:: none
+.. important::
+    :ref:`Do not actually use the <brackets> and (parenthesis), they denote required and optional input.`
 
-    !note <id> (note)
+    .. image::  /media/punishments/rule.png
 
-Adds a note as a warning to the user, logging to the modlog. Does not DM the user, Staff only reference.
-
-
-- **Warning**
+Warning
+------------
 
 .. code-block:: none
 
@@ -81,7 +73,13 @@ Adds a note as a warning to the user, logging to the modlog. Does not DM the use
 
 Warn the user, logging to the modlog and DMing the user. Warns cannot be appealed and are a recommended first action after or with a verbal warning.
 
-- **Mute**
+.. important::
+    :ref:`Remember, the user is DMed. Please provide an appropriate and at least a semi-descriptive reason so that the member can remediate their behavior.`
+
+    .. image::  /media/punishments/warn.png
+
+Mute
+------------
 
 .. code-block:: none
 
@@ -91,10 +89,15 @@ Mutes a user, preventing them from talking (and viewing certain channels). You m
 
 Users who evade mutes by leaving become permanently muted when rejoining. They must reach out to Modmail to get this fixed as it is their fault.
 
-.. warning::
-    :ref:`Please ensure you specify a time and do not perma-mute users.`
+When selecting a time, there are several pre-defined options that you may choose. It is at moderator discretion to choose a time appropriate for the punishment. 
 
-- **Kick**
+.. tip::
+    :ref:`A time period of a day is usually suggested as a generic minimum period as punished users will be less likely to retaliate after 24 hours have passed.`
+
+    .. image::  /media/punishments/mute.png
+
+Kick
+------------
 
 .. code-block:: none
 
@@ -102,7 +105,17 @@ Users who evade mutes by leaving become permanently muted when rejoining. They m
 
 Kicks remove the member from the server without deleting messages.
 
-- **Softban**
+Reserve this punishment for new-ish members who need a reality check to come back when they are ready to read the rules and play nice.
+
+Most unused, but can make a statement if necessary.
+
+.. warning::
+    :ref:`Will remove all activity ranks (not reset rank itself). Therefore, the member returning must level up once to regain all their roles back.`
+
+    .. image::  /media/punishments/kick.png
+
+Softban
+------------
 
 .. code-block:: none
 
@@ -110,7 +123,14 @@ Kicks remove the member from the server without deleting messages.
 
 Softban removes a member from the server, deleting 1 day of messages.
 
-- **Ban**
+Reserve this punishment for those who you wish to kick, at the same time wanting to delete their messages alongside it.
+
+Calls the user purge portion of the API by immediately banning and unbanning the user.
+
+    .. image::  /media/punishments/softban.png
+
+Ban
+------------
 
 .. code-block:: none
     
@@ -118,25 +138,10 @@ Softban removes a member from the server, deleting 1 day of messages.
 
 Bans and DMs the user a link where they may appeal (first offense only) and purges 1 day of messages.
 
-- **Examples**
+    .. image::  /media/punishments/ban.png
 
-+-----------+----------------------------------------+
-| Punishment| Issued Command                         |
-+===========+========================================+
-| Verbal    | !rule4 <id>                            |
-+-----------+----------------------------------------+
-| Warn      | /warn <user> Spamming the server       |
-+-----------+----------------------------------------+
-| Mute      | /mute <user> <time> Spamming           |
-+-----------+----------------------------------------+
-| Kick      | /kick <user> Read the rules please     |
-+-----------+----------------------------------------+
-| Softban   | /softban <user> Multi channel spam     |
-+-----------+----------------------------------------+
-| Ban       | /ban <user> [rule5]                    |
-+-----------+----------------------------------------+
-
-- **Substitutions**
+Substitutions
+------------
 
 Why did we use \"**[rule#]**\" in some of our reasons in the examples above? Substitutions are a way of increasing your efficiency in issuing punishments. 
 When using brackets around a \"**rule#**\", it will replace the text with the rule that it corresponds to.
@@ -153,13 +158,15 @@ translates to the following full command:
 
 This is a time-saver you should get used to as long as the reason for punishment is indeed that rule and made obvious to the user.
 
-
 Modlog Management
 ------------
 
 - **Invoking the Modlog**
 
-To search a user's modlog, you will run **!search <id>**. This will invoke an embed, beginning with an overview of their punishment history.
+To search a user's modlog, you will run **!warnings <id>**. This will invoke an embed, beginning with an overview of their punishment history.
+
+.. important::
+    :ref:`Do not actually use the <brackets> and (parenthesis), they denote required and optional input.`
 
 To interact with the modlog, you will need to use the arrow reactions to populate a single infraction. 
 
@@ -175,14 +182,11 @@ The left and right reactions scroll through the modlog. Pressing ❌ will close 
 After scrolling to an individual punishment, ✏️ will allow you to edit the reason. Useful if you made a typo or were not specific enough in your punishment reason. 
 🗑️ allows you to clear the modlog entry.
 
+.. important::
+    :ref:`Edits made to the modlog do not update for the punished user in their direct messages.`
+
 .. warning::
-    :ref:`Do not use these on the modlog overview. Use the reactions to scroll to a specific reaction.`
-
-.. important::
-    :ref:`Edits made to the modlog do not update for the punished user.`
-
-.. important::
-    :ref:`Cleared mutes will automatically unmute the user.`
+    :ref:`Cleared mutes will automatically unmute the user. Please keep this in mind when modifying the modlog.`
 
 Warden System
 ------------
