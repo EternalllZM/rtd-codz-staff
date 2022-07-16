@@ -101,7 +101,7 @@ Kick
 
 .. code-block:: none
 
-    !kick <user> <reason>
+    /kick <user> <reason>
 
 Kicks remove the member from the server without deleting messages.
 
@@ -119,7 +119,7 @@ Softban
 
 .. code-block:: none
 
-    !softban <user> <reason>
+    /softban <user> <reason>
 
 Softban removes a member from the server, deleting 1 day of messages.
 
@@ -137,7 +137,7 @@ Ban
 
 .. code-block:: none
     
-    !ban <user> <reason>
+    /ban <user> <reason>
 
 Bans and DMs the user a link where they may appeal (first offense only) and purges 1 day of messages.
 
