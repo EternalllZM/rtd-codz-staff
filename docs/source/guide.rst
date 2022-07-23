@@ -36,6 +36,8 @@ Issuing Punishments
 +===========+========================================+
 | !rule     | Verbal warning not sent to modlog.     |
 +-----------+----------------------------------------+
+| /note     | Add a note (non-DM warning) to user.   |
++-----------+----------------------------------------+
 | /warn     | A warning sent to the user.            |
 +-----------+----------------------------------------+
 | /mute     | A temporary mute of the user.          |
@@ -63,6 +65,20 @@ Verbal warning, unrelated to the modlog system. You may optionally use an ID or 
 
 .. important::
     :ref:`Do not actually use the <brackets> and (parenthesis), they denote required and optional input.`
+
+Note
+------------
+
+.. code-block:: none
+
+    /note <user> <reason>
+
+Add a non-DMing warning to a user, known as a note. This will populate the modlog with the warning but will **not** DM the user the warning.
+
+    .. image::  /media/punishments/note.png
+
+.. important::
+    :ref:`The user is not DMed. Therefore, please provide information that is important to others viewing the modlog.`
 
 Warning
 ------------
@@ -193,6 +209,29 @@ After scrolling to an individual punishment, ✏️ will allow you to edit the r
 
 .. warning::
     :ref:`Cleared mutes will automatically unmute the user. Please keep this in mind when modifying the modlog.`
+
+Backup Commands
+------------
+
+Should Discord have issues with their slash command system, you may opt to use the **!** prefixed command version in the meantime. 
+This ensures Moderators are not unable to perform their duties as necessary. 
+However, please do not use these if slash commands are functioning normally.
+
++-----------+----------------------------------------+
+| Backup    | Function                         |
++===========+========================================+
+| !rule     | Verbal warning not sent to modlog.     |
++-----------+----------------------------------------+
+| !warn 1   | Backup for warn command.               |
++-----------+----------------------------------------+
+| !warn 2   | Backup for mute command.               |
++-----------+----------------------------------------+
+| !warn 3   | Backup for kick command.               |
++-----------+----------------------------------------+
+| !warn 4   | Backup for softban command.            |
++-----------+----------------------------------------+
+| !warn 5   | Backup for ban command.                |
++-----------+----------------------------------------+
 
 Warden System
 ------------
