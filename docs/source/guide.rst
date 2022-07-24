@@ -218,7 +218,7 @@ This ensures Moderators are not unable to perform their duties as necessary.
 However, please do not use these if slash commands are functioning normally.
 
 +-----------+----------------------------------------+
-| Backup    | Function                         |
+| Backup    | Function                               |
 +===========+========================================+
 | !rule     | Verbal warning not sent to modlog.     |
 +-----------+----------------------------------------+
